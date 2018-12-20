@@ -1,5 +1,5 @@
 <footer class="footer">
-  <link href="//trainersforgames.com/wp-content/themes/savesforgames-v4-bem1/style.css" rel="stylesheet">
+  <link href="//trainersforgames.com/wp-content/themes/trainersforgames-v1/style.css" rel="stylesheet">
 
   <footer class="footer__inner">
 		<div class="footer__links-wrap footer__links-wrap_links-align_left">

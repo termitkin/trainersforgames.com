@@ -23,6 +23,7 @@
   }
   html, body {
     overflow-x: hidden;
+		height: 100%;
   }
   body, div, header, aside, footer, input, button, ul {
     margin: 0;
@@ -32,13 +33,13 @@
     width: 728px;
     margin: 20px auto 0 auto;
   }
+
   @media screen and (min-width: 0px) and (max-width: 782px) {
     .google-ads-in-header {
       width: 100%;
       margin: 20px auto 0 auto;
     }
   }
-
   .header {
     background-color: #09c;
     height: 40px;
@@ -53,6 +54,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   @media screen and (min-width: 0px) and (max-width: 782px) {
     .header__content-wrapper {
       width: 100%;
@@ -61,7 +63,6 @@
       padding: 0 1%;
     }
   }
-
   .search-form {
     width: 260px;
     height: 30px;
@@ -89,6 +90,7 @@
     cursor: pointer;
     padding: 7px;
   }
+
   @media screen and (min-width: 0px) and (max-width: 782px) {
     .search-form {
       width: 44%;
@@ -104,7 +106,6 @@
       height: 30px;
     }
   }
-
   .site-logo {
     width: 206px;
     height: 23px;
@@ -117,116 +118,29 @@
   .site-logo:hover {
     text-decoration: none;
   }
+
   @media screen and (min-width: 0px) and (max-width: 782px) {
     .site-logo {
       width: 54%;
     }
   }
 
-  .content-and-sidebar-wrapper {
-    width: 780px;
-    height: 100%;
+  .page-404 {
+    max-width: 980px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
   }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .content-and-sidebar-wrapper {
-      width: 100%;
-    }
+  .page-404__heading {
+    color: #333;
   }
-
-  .post {
-    width: 500px;
-    margin-top: 10px;
-    color: #444;
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  .post p {
-    margin: 13px 0;
-  }
-  .post strong {
-    color: #454545;
-  }
-  .post a {
-    color: #09c;
-  }
-  .post a:hover {
-    text-decoration: none;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .post {
-      width: 98%;
-    }
-
-    .post img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-    }
-  }
-
-  .posts-wrapper {
-    width: 500px;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .posts-wrapper {
-      width: 100%;
-      padding: 0 1vw;
-    }
-  }
-  
-  .sidebar {
-    width: 260px;
-    min-height: 709px;
-    overflow-x: hidden;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .sidebar {
-      display: none;
-    }
-  }
-
-  .post-heading,
-  .post-heading__link {
-    display: block;
-    width: 500px;
-    min-height: 25px;
-    font-size: 18px;
-    color: #09c;
-    font-weight: 400;
-  }
-  .post-heading__link:hover {
-    text-decoration: none;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .post-heading,
-    .post-heading__link {
-      max-width: 98%;
-      
-    }
-  }
-  .twitter-timeline {
-  	width:260px !important;
-  	height:500px !important;
-  }
-  .popular-posts-heading {
-    padding-top: 20px;
-    font-size: 18px;
-    color: #09c;
-  }
-  .popular-posts-list {
-    width: 260px;
-    list-style-type: none;
-    font-size: 12px;
-  }
-  .popular-posts-list__link {
-    color: #09c;
+  .page-404__image {
+    width: 100%;
+    max-width: 980px;
+    height: auto;
   }
   </style>
 </head>
 <body>
+
   <header class="header">
     <div class="header__content-wrapper">
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
@@ -238,14 +152,14 @@
   </header>
 
   <div class="google-ads-in-header">
-      <!-- trainersforgames в шапке 728px -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:728px;height:90px"
-           data-ad-client="ca-pub-3398097190333973"
-           data-ad-slot="6194394950"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+    <!-- trainersforgames в шапке 728px -->
+    <ins class="adsbygoogle"
+			style="display:inline-block;width:728px;height:90px"
+			data-ad-client="ca-pub-3398097190333973"
+			data-ad-slot="6194394950"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
   <script>
@@ -253,8 +167,15 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
+
   ga('create', 'UA-12705312-13', 'trainersforgames.com',{'siteSpeedSampleRate': 100});
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
   </script>
+
+	<div class="page-404">
+    <h1 class="page-404__heading">Error 404: Page not Found</h1>
+		<img class="page-404__image" src="<?php echo esc_url( get_template_directory_uri() );?>/404-error/404.jpg" alt="Error 404: Page not Found" />
+	</div>
+</body>
+</html>

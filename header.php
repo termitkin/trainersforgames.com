@@ -227,10 +227,10 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header role="banner" class="header">
     <div class="header__content-wrapper">
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
-      <form class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
+      <form role="search" class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
         <input class="search-form__input" name="s" type="text" placeholder="Find a trainer..">
         <button class="search-form__button" id="searchsubmit" type="submit">Search</button>
       </form>

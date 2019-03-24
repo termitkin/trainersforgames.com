@@ -1,4 +1,4 @@
-<aside class="sidebar">
+<aside role="complementary" class="sidebar">
 	<!--noindex-->
 		<div class="popular-posts-heading">Most Popular Savegame</div>
 		<ul class="popular-posts-list">

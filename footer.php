@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer role="contentinfo" class="footer">
   <link href="//trainersforgames.com/wp-content/themes/trainersforgames-v1/style.css" rel="stylesheet">
 
   <div class="footer__inner">

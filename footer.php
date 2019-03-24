@@ -8,7 +8,7 @@
     </div>
 
     <div class="footer__links-wrap footer__links-wrap_links-align_right">
-      <span>Powered&nbsp;By&nbsp;<a class="footer__link" href="http://wordpress.org/" title="Powered By WordPress" rel="nofollow" target="_blank">WordPress</a></span>
+      <span>Powered&nbsp;By&nbsp;<a class="footer__link" href="http://wordpress.org/" title="Powered By WordPress" rel="nofollow noopener" target="_blank">WordPress</a></span>
       <span>&copy; 2018</span>
     </div>
   </div>

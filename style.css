@@ -10,7 +10,7 @@ Version: 1
 .footer {
   width: 100%;
   height: 50px;
-  background-color: #09c;
+  background-color: #007dad;
   color: #fff;
   margin-top: 20px;
   font-size: 14px;
@@ -73,7 +73,7 @@ Version: 1
   height: 23px;
   margin-right: 4px;
   padding: 3px 7px 0;
-  background-color: #09c;
+  background-color: #007dad;
   color: #fff;
   text-decoration: none;
 }
@@ -104,7 +104,7 @@ Version: 1
   margin: 10px 0;
   font-size: 18px;
   font-weight: 700;
-  color: #09c
+  color: #007dad
 }
 
 .fb-comments {
@@ -137,7 +137,7 @@ Version: 1
 }
 
 .you-can-download__link {
-  color: #09c
+  color: #007dad
 }
 
 .you-can-download__link:hover {

@@ -40,7 +40,7 @@
   }
 
   .header {
-    background-color: #09c;
+    background-color: #007dad;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@
     color: #454545;
   }
   .post a {
-    color: #09c;
+    color: #007dad;
   }
   .post a:hover {
     text-decoration: none;
@@ -198,7 +198,7 @@
     width: 500px;
     min-height: 25px;
     font-size: 18px;
-    color: #09c;
+    color: #007dad;
     font-weight: 400;
   }
   .post-heading__link:hover {
@@ -218,7 +218,7 @@
   .popular-posts-heading {
     padding-top: 20px;
     font-size: 18px;
-    color: #09c;
+    color: #007dad;
   }
   .popular-posts-list {
     width: 260px;
@@ -226,7 +226,7 @@
     font-size: 12px;
   }
   .popular-posts-list__link {
-    color: #09c;
+    color: #007dad;
   }
   </style>
 </head>

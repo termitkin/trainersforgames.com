@@ -147,6 +147,9 @@
     color: #E60050;
     font-weight: bold;
   }
+  .post__trainer-version {
+    color: #E60050;
+  }
   .post p {
     margin: 13px 0;
   }

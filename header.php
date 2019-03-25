@@ -143,6 +143,10 @@
     font-size: 13px;
     line-height: 1.4;
   }
+  .post__password {
+    color: #E60050;
+    font-weight: bold;
+  }
   .post p {
     margin: 13px 0;
   }

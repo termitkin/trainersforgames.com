@@ -197,14 +197,15 @@
 
   .post-heading,
   .post-heading__link {
-    display: block;
+    display: inline;
     width: 500px;
     min-height: 25px;
     font-size: 18px;
     color: #007dad;
     font-weight: 400;
   }
-  .post-heading__link:hover {
+  .post-heading__link:hover,
+  .post-heading__link:focus {
     text-decoration: none;
   }
   @media screen and (min-width: 0px) and (max-width: 782px) {

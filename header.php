@@ -1,245 +1,239 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <title><?php wp_title('', true);?> | Trainers For Games</title>
-  <?php wp_head();?>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="fb:admins" content="100001912999823"/>
-  <meta property="fb:app_id" content="204938163503477" />
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
-  <link rel="dns-prefetch" href="https://google-analytics.com">
-  <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
-  <link rel="dns-prefetch" href="https://adservice.google.com">
-  <link rel="dns-prefetch" href="https://platform.twitter.com">
-  <link rel="dns-prefetch" href="https://syndication.twitter.com">
-  <link rel="dns-prefetch" href="https://www.facebook.com">
-  <link rel="dns-prefetch" href="https://connect.facebook.net">
-  <style>
-  * {
-    box-sizing: border-box;
-    font-family: arial, sans-serif;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-  body, div, header, aside, footer, input, button, ul {
-    margin: 0;
-    padding: 0;
-  }
+<meta charset="UTF-8">
+<title><?php wp_title('', true);?> | Trainers For Games</title>
+<?php wp_head();?>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="fb:admins" content="100001912999823"/>
+<meta property="fb:app_id" content="204938163503477" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://google-analytics.com">
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="https://adservice.google.com">
+<link rel="dns-prefetch" href="https://platform.twitter.com">
+<link rel="dns-prefetch" href="https://syndication.twitter.com">
+<link rel="dns-prefetch" href="https://www.facebook.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<style>
+body, div, header, aside, footer, input, button, ul {
+  margin: 0;
+  padding: 0;
+}
+.google-ads-in-header {
+  width: 100%;
+  max-width: 728px;
+  margin: 20px auto 0 auto;
+}
+@media screen and (min-width: 992px) {
   .google-ads-in-header {
     width: 728px;
-    margin: 20px auto 0 auto;
   }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .google-ads-in-header {
-      width: 100%;
-      margin: 20px auto 0 auto;
-    }
-  }
-
+}
+.header {
+  background-color: #007dad;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
   .header {
-    background-color: #007dad;
     height: 40px;
-    display: flex;
-    justify-content: center;
   }
-
-  .header__content-wrapper {
+}
+.header__content {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .header__content {
     width: 780px;
     height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .header__content-wrapper {
-      width: 100%;
-      height: 40px;
-      margin: 0 auto;
-      padding: 0 1%;
-    }
-  }
-
-  .search-form {
-    width: 260px;
-    height: 30px;
-    display: flex;
+    padding: 0 15px;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .search-form__input {
-    width: 200px;
-    height: 30px;
-    border-radius: 3px 0 0 3px;
-    border: 0;
-    margin: 0;
-    padding: 7px;
-  }
-
-  .search-form__button {
-    height: 30px;
-    background-color: #fff;
-    border: 0;
-    border-radius: 0 3px 3px 0;
-    border-left: 1px solid #ccc;
-    cursor: pointer;
-    padding: 7px;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .search-form {
-      width: 44%;
-    }
-
-    .search-form__input {
-      width: 48%;
-      height: 30px;
-    }
-
-    .search-form__button {
-      width: 40%;
-      height: 30px;
-    }
-  }
-
-  .site-logo {
-    width: 206px;
-    height: 23px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.25s;
-  }
-
-  .site-logo:hover,
-  .site-logo:hover {
-    color: #ffffcc;
-    text-decoration: none;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .site-logo {
-      width: 54%;
-    }
-  }
-
-  .content-and-sidebar-wrapper {
-    width: 780px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
     justify-content: space-between;
   }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .content-and-sidebar-wrapper {
-      width: 100%;
-    }
-  }
+}
+.search-form {
+  width: 260px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-form__input {
+  width: 200px;
+  height: 30px;
+  border-radius: 3px 0 0 3px;
+  border: 0;
+  margin: 0;
+  padding: 7px;
+  background-color: #fff;
+  transition: background-color 0.25s;
+  box-sizing: border-box;
+}
+.search-form__input:hover,
+.search-form__input:focus {
+  background-color: #ffffcc;
+  outline: none;
+}
+.search-form__button {
+  height: 30px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  padding: 7px;
+}
+.search-form__button:hover,
+.search-form__button:focus {
+  background-color: #ffffcc;
+  outline: none;
+}
+.site-logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.site-logo:focus,
+.site-logo:hover {
+  color: #ffffcc;
+  text-decoration: none;
+}
+.content-and-sidebar-wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 15px;
+}
 
-  .post {
-    width: 500px;
-    margin-top: 10px;
-    color: #444;
-    font-size: 13px;
-    line-height: 1.4;
+@media screen and (min-width: 992px) {
+  .content-and-sidebar-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .post__password {
-    color: #E60050;
-    font-weight: bold;
-  }
-  .post__trainer-version {
-    color: #E60050;
-  }
-  .post p {
-    margin: 13px 0;
-  }
-  .post strong {
-    color: #454545;
-  }
-  .post a {
-    color: #007dad;
-  }
-  .post a:hover {
-    text-decoration: none;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .post {
-      width: 98%;
-    }
+}
 
-    .post img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-    }
-  }
-
+.post {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+.post__password {
+  color: #E60050;
+  font-weight: bold;
+}
+.post__trainer-version {
+  color: #E60050;
+}
+.post p {
+  margin: 13px 0;
+}
+.post strong {
+  color: #454545;
+}
+.post a {
+  color: #007dad;
+}
+.post a:hover,
+.post a:focus {
+  text-decoration: none;
+}
+.post img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.posts-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
   .posts-wrapper {
-    width: 500px;
+    margin: 0;
   }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .posts-wrapper {
-      width: 100%;
-      padding: 0 1vw;
-    }
-  }
-  
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 992px) {
   .sidebar {
-    width: 260px;
-    min-height: 709px;
+    margin: 0;
+  }
+}
+/* .sidebar {
+  display: none;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 992px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
     overflow-x: hidden;
   }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .sidebar {
-      display: none;
-    }
-  }
-
-  .post-heading,
-  .post-heading__link {
-    display: inline;
-    width: 500px;
-    min-height: 25px;
-    font-size: 18px;
-    color: #007dad;
-    font-weight: 400;
-  }
-  .post-heading__link:hover,
-  .post-heading__link:focus {
-    text-decoration: none;
-  }
-  @media screen and (min-width: 0px) and (max-width: 782px) {
-    .post-heading,
-    .post-heading__link {
-      max-width: 98%;
-      
-    }
-  }
-  .twitter-timeline {
-  	width:260px !important;
-  	height:500px !important;
-  }
-  .popular-posts-heading {
-    padding-top: 20px;
-    font-size: 18px;
-    color: #007dad;
-  }
-  .popular-posts-list {
-    width: 260px;
-    list-style-type: none;
-    font-size: 12px;
-  }
-  .popular-posts-list__link {
-    color: #007dad;
-  }
-  </style>
+} */
+.post-heading {
+  display: inline;
+  font-size: 18px;
+  color: #007dad;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.popular-posts-heading {
+  margin: 12px 0 3px 0;
+  font-size: 18px;
+  color: #007dad;
+}
+.popular-posts-list {
+  max-width: 260px;
+  list-style-type: none;
+  font-size: 12px;
+}
+.link {
+  text-decoration: underline;
+  color: #007dad;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.link:hover,
+.link:focus {
+  text-decoration: none;
+}
+.link_size_big {
+  font-size: 18px;
+}
+.link_color_white {
+  color: #fff;
+}
+</style>
 </head>
 <body>
   <header role="banner" class="header">
-    <div class="header__content-wrapper">
+    <div class="header__content">
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
       <form role="search" class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
         <input class="search-form__input" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">

@@ -2,14 +2,14 @@
   <link href="//trainersforgames.com/wp-content/themes/trainersforgames-v1/style.css" rel="stylesheet">
 
   <div class="footer__inner">
-		<div class="footer__links-wrap footer__links-wrap_links-align_left">
-      <a class="footer__link" href="/" title="Home page">Home</a>
-      <a class="footer__link" href="//savesforgames.com/" title="Download Saves For Games" rel="nofollow noopener" target="_blank">Saves&nbsp;For&nbsp;Games</a>
+		<div class="footer__content footer__content_align_left">
+      <a class="link link_color_white" href="/" title="Home page">Home</a>
+      <a class="link link_color_white" href="//savesforgames.com/" title="Download Saves For Games" rel="nofollow noopener" target="_blank">Saves&nbsp;For&nbsp;Games</a>
     </div>
 
-    <div class="footer__links-wrap footer__links-wrap_links-align_right">
-      <span>Powered&nbsp;By&nbsp;<a class="footer__link" href="http://wordpress.org/" title="Powered By WordPress" rel="nofollow noopener" target="_blank">WordPress</a></span>
-      <span>&copy; 2018</span>
+    <div class="footer__content footer__content_align_right">
+      <span>Powered&nbsp;By&nbsp;<a class="link link_color_white" href="http://wordpress.org/" title="Powered By WordPress" rel="nofollow noopener" target="_blank">WordPress</a></span>
+      <span>&copy; 2018-2019</span>
     </div>
   </div>
 

@@ -112,9 +112,12 @@
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
+    transition: color 0.25s;
   }
 
+  .site-logo:hover,
   .site-logo:hover {
+    color: #ffffcc;
     text-decoration: none;
   }
   @media screen and (min-width: 0px) and (max-width: 782px) {

@@ -101,6 +101,35 @@ function enable_extended_upload ( $mime_types =array() ) {
 add_filter('upload_mimes', 'enable_extended_upload');
 
 
+// Remove website field from add comments form
+function website_remove($fields) {
+	if(isset($fields['url'])) {
+		unset($fields['url']);
+	}
+	if (isset($fields['email'])) {
+		unset($fields['email']);
+	}
+	
+	return $fields;
+}
+add_filter('comment_form_default_fields', 'website_remove');
+
+// Comment date to format %num% days ago
+function pressfore_comment_time_output($date, $d, $comment){
+	return sprintf( _x( '%s ago', '%s = human-readable time difference'), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) );
+}
+add_filter('get_comment_date', 'pressfore_comment_time_output', 10, 3);
+
+// Change order fields in comments (author -> textarea -> submit button)
+function wpb_move_comment_field_to_bottom($fields) {
+	$comment_field = $fields['comment'];
+	unset( $fields['comment'] );
+	$fields['comment'] = $comment_field;
+	return $fields;
+}
+add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom' );
+
+
 
 
 

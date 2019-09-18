@@ -229,6 +229,116 @@ body, div, header, aside, footer, input, button, ul {
 .link_color_white {
   color: #fff;
 }
+
+
+.comment-list,
+.children {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+.comment-list,
+.comment-body,
+.comments-title,
+.comment-reply-title {
+  color: #444;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.comment-content {
+  word-wrap: break-word;
+}
+.comment-metadata {
+  display: flex;
+}
+.comment-metadata a {
+  color: #999;
+  text-decoration: underline;
+}
+.comment-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.edit-link {
+  margin-left: auto;
+}
+.comment {
+  margin-top: 15px;
+}
+.comment-content {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.children {
+  width: 95%;
+  margin-left: auto;
+}
+.comment-form,
+.comment-notes,
+.comment-form-comment,
+.comment-form-author {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 0;
+}
+.comment-notes {
+  display: none;
+}
+.input,
+#author,
+#comment {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 7px;
+  background-color: #fff;
+  transition: background-color 0.25s;
+  box-sizing: border-box;
+}
+#comment {
+  min-width: 100%;
+  max-width: 100%;
+}
+.input_search {
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+.submit {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  padding: 7px;
+}
+.submit:hover,
+.submit:focus {
+  background-color: #ffffcc;
+}
+.submit_search {
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  border-left: 1px solid #ccc;
+}
+#comment {
+  min-height: 100px;
+}
+.input:hover,
+.input:focus,
+#comment:hover,
+#comment:focus,
+#author:hover,
+#author:focus {
+  background-color: #ffffcc;
+  outline: none;
+}
+
+
 </style>
 </head>
 <body>
@@ -236,8 +346,8 @@ body, div, header, aside, footer, input, button, ul {
     <div class="header__content">
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
       <form role="search" class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
-        <input class="search-form__input" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">
-        <button class="search-form__button" aria-label="Search button" id="searchsubmit" type="submit">Search</button>
+        <input class="input input_search" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">
+        <button class="submit submit_search" aria-label="Search button" id="searchsubmit" type="submit">Search</button>
       </form>
     </div>
   </header>

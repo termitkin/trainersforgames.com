@@ -17,6 +17,12 @@
 <link rel="dns-prefetch" href="https://www.facebook.com">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
 <style>
+html {
+  height: 100%;
+}
+body {
+	height: calc(100% - 50px);
+}
 body, div, header, aside, footer, input, button, ul {
   margin: 0;
   padding: 0;
@@ -111,6 +117,7 @@ body, div, header, aside, footer, input, button, ul {
   text-decoration: none;
 }
 .content-and-sidebar-wrapper {
+  min-height: calc(100% - 266px);
   max-width: 780px;
   margin: 0 auto;
   display: flex;
@@ -118,14 +125,17 @@ body, div, header, aside, footer, input, button, ul {
   align-items: flex-start;
   padding: 0 15px;
 }
-
+@media screen and (min-width: 576px) {
+  .content-and-sidebar-wrapper {
+    min-height: calc(100% - 174px);
+  }
+}
 @media screen and (min-width: 992px) {
   .content-and-sidebar-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-
 .post {
   width: 100%;
   max-width: 500px;
@@ -162,6 +172,7 @@ body, div, header, aside, footer, input, button, ul {
 }
 .posts-wrapper {
   width: 100%;
+  min-height: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -183,18 +194,6 @@ body, div, header, aside, footer, input, button, ul {
     margin: 0;
   }
 }
-/* .sidebar {
-  display: none;
-  font-family: sans-serif;
-}
-@media screen and (min-width: 992px) {
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    max-width: 260px;
-    overflow-x: hidden;
-  }
-} */
 .post-heading {
   display: inline;
   font-size: 18px;
@@ -229,8 +228,6 @@ body, div, header, aside, footer, input, button, ul {
 .link_color_white {
   color: #fff;
 }
-
-
 .comment-list,
 .children {
   padding: 0;
@@ -341,8 +338,6 @@ body, div, header, aside, footer, input, button, ul {
   background-color: #ffffcc;
   outline: none;
 }
-
-
 </style>
 </head>
 <body>

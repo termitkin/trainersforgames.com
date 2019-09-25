@@ -49,7 +49,7 @@ body, div, header, aside, footer, input, button, ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 576px) {
   .header__content {
@@ -137,7 +137,7 @@ body, div, header, aside, footer, input, button, ul {
   color: #444;
   font-size: 13px;
   line-height: 1.4;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .post__password {
   color: #E60050;
@@ -181,7 +181,7 @@ body, div, header, aside, footer, input, button, ul {
   max-width: 260px;
   overflow-x: hidden;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 992px) {
   .sidebar {
@@ -193,7 +193,7 @@ body, div, header, aside, footer, input, button, ul {
   font-size: 18px;
   color: #007dad;
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .popular-posts-heading {
   margin: 12px 0 3px 0;
@@ -210,7 +210,7 @@ body, div, header, aside, footer, input, button, ul {
   color: #007dad;
   font-size: 13px;
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .link:hover,
 .link:focus {
@@ -227,7 +227,7 @@ body, div, header, aside, footer, input, button, ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .comment-list,
 .comment-body,
@@ -235,7 +235,7 @@ body, div, header, aside, footer, input, button, ul {
 .comment-reply-title {
   color: #444;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .comment-content {
   word-wrap: break-word;
@@ -274,6 +274,9 @@ body, div, header, aside, footer, input, button, ul {
   display: flex;
   flex-direction: column;
   margin: 0 0 15px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
 }
 .comment-notes {
   display: none;
@@ -290,6 +293,9 @@ body, div, header, aside, footer, input, button, ul {
   background-color: #fff;
   transition: background-color 0.25s;
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 #author,
 #comment {
@@ -341,7 +347,7 @@ body, div, header, aside, footer, input, button, ul {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 576px) {
   .footer {
@@ -398,7 +404,7 @@ body, div, header, aside, footer, input, button, ul {
   background-color: #007dad;
   color: #fff;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .page-numbers:hover,
 .page-numbers:focus {
@@ -429,7 +435,7 @@ body, div, header, aside, footer, input, button, ul {
   font-size: 18px;
   font-weight: 700;
   color: #007dad;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .post-views-label,
 .post-views-count {
@@ -441,7 +447,7 @@ body, div, header, aside, footer, input, button, ul {
   width: 100%;
   max-width: 500px;
   margin-bottom: 15px;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   color: #444;
 }
 </style>

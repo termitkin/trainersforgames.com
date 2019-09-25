@@ -5,17 +5,11 @@
 <title><?php wp_title('', true);?> | Trainers For Games</title>
 <?php wp_head();?>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="fb:admins" content="100001912999823"/>
-<meta property="fb:app_id" content="204938163503477" />
 <link rel="shortcut icon" href="/favicon.ico">
-<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
-<link rel="dns-prefetch" href="https://google-analytics.com">
-<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
-<link rel="dns-prefetch" href="https://adservice.google.com">
-<link rel="dns-prefetch" href="https://platform.twitter.com">
-<link rel="dns-prefetch" href="https://syndication.twitter.com">
-<link rel="dns-prefetch" href="https://www.facebook.com">
-<link rel="dns-prefetch" href="https://connect.facebook.net">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+<link rel="preconnect" href="https://adservice.google.com">
 <style>
 html {
   height: 100%;

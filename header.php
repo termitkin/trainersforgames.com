@@ -332,6 +332,118 @@ body, div, header, aside, footer, input, button, ul {
   background-color: #ffffcc;
   outline: none;
 }
+.footer {
+  padding: 15px;
+  background-color: #007dad;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .footer {
+    padding: 7px 15px;
+  }
+}
+.footer__inner {
+  width: 100%;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__content {
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .footer__content_align_left {
+    align-items: flex-start;
+  }
+  .footer__content_align_right {
+    align-items: flex-end;
+  }
+}
+.pagination {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .pagination {
+    justify-content: flex-start;
+  }
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 4px 0 0;
+  padding: 7px 7px 5px 7px;
+  background-color: #007dad;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.page-numbers:hover,
+.page-numbers:focus {
+  background-color: #339900;
+}
+.dots:hover,
+.dots:focus {
+  background-color: #007dad;
+}
+.current,
+.current:hover,
+.current:focus {
+  background-color: #f06;
+}
+.google-ads-and-comments-wrapper {
+  width: 100%;
+  max-width: 500px;
+  min-height: 307px;
+}
+.social-network-like-buttons {
+  max-width: 500px;
+  height: 20px;
+  margin-top: 10px;
+}
+.leave-a-comment {
+  max-width: 500px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #007dad;
+  font-family: sans-serif;
+}
+.post-views-label,
+.post-views-count {
+  color: #444;
+  font-size: 12px;
+  display: inline;
+}
+.you-can-download {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  color: #444;
+}
 </style>
 </head>
 <body>

@@ -237,18 +237,31 @@ body, div, header, aside, footer, input, button, ul {
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
-.comment-content {
-  word-wrap: break-word;
+.comment-body {
+  word-wrap: break-word;	  
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #007dad;
+  color: #fff;
+  margin: -11px -11px 0 -11px;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
 }
 .comment-metadata {
   display: flex;
 }
 .comment-metadata a {
-  color: #999;
+  color: #fff;
   text-decoration: underline;
 }
 .comment-metadata a:hover {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 .edit-link {
@@ -258,14 +271,18 @@ body, div, header, aside, footer, input, button, ul {
   margin-top: 15px;
 }
 .comment-content {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0 10px;
-  margin: 10px 0;
+  word-wrap: break-word;
 }
 .children {
   width: 95%;
   margin-left: auto;
+}
+.comment-reply-link {
+  color: #007dad;
+  text-decoration: underline;
+}
+.comment-reply-link:hover {
+  text-decoration: none;
 }
 .comment-form,
 .comment-notes,

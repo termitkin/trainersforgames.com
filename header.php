@@ -278,6 +278,11 @@ body, div, header, aside, footer, input, button, ul {
   font-size: 14px;
   color: #333;
 }
+.comment-form-comment,
+.comment-form-author {
+  font-size: 0.875rem;
+  align-items: flex-start;
+}
 .comment-notes {
   display: none;
 }
@@ -299,11 +304,12 @@ body, div, header, aside, footer, input, button, ul {
 }
 #author,
 #comment {
+  width: 100%;
+  max-width: 500px;
   margin-top: 5px;
 }
 #comment {
   min-width: 100%;
-  max-width: 100%;
 }
 .input_search {
   border: none;
@@ -329,11 +335,8 @@ body, div, header, aside, footer, input, button, ul {
 #comment {
   min-height: 100px;
 }
-.input:hover,
 .input:focus,
-#comment:hover,
 #comment:focus,
-#author:hover,
 #author:focus {
   background-color: #ffffcc;
   outline: none;

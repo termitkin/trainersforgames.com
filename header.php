@@ -113,7 +113,7 @@ body, div, header, aside, footer, input, button, ul {
 .content-and-sidebar-wrapper {
   min-height: calc(100% - 266px);
   max-width: 780px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -491,17 +491,6 @@ body, div, header, aside, footer, input, button, ul {
       </form>
     </div>
   </header>
-
-  <div class="google-ads-in-header">
-      <!-- trainersforgames в шапке 728px -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:728px;height:90px"
-           data-ad-client="ca-pub-3398097190333973"
-           data-ad-slot="6194394950"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-  </div>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

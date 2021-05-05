@@ -429,15 +429,16 @@ body, div, header, aside, footer, input, button, ul {
   justify-content: center;
   align-items: center;
   margin: 10px 4px 0 0;
-  padding: 7px 7px 5px 7px;
+  padding: 5px 10px 5px 10px;
   background-color: #007dad;
   color: #fff;
   text-decoration: none;
   font-family: Arial, sans-serif;
+  border-radius: 3px;
 }
 .page-numbers:hover,
 .page-numbers:focus {
-  background-color: #339900;
+  background-color: #249556;
 }
 .dots:hover,
 .dots:focus {
@@ -446,7 +447,7 @@ body, div, header, aside, footer, input, button, ul {
 .current,
 .current:hover,
 .current:focus {
-  background-color: #f06;
+  background-color: #333;
 }
 .google-ads-and-comments-wrapper {
   width: 100%;

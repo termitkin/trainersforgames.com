@@ -36,10 +36,12 @@ body, div, header, aside, footer, input, button, ul {
   height: 80px;
   display: flex;
   justify-content: center;
+  padding: 0 15px;
 }
 @media screen and (min-width: 576px) {
   .header {
     height: 40px;
+    padding: 0;
   }
 }
 .header__content {
@@ -61,7 +63,8 @@ body, div, header, aside, footer, input, button, ul {
   }
 }
 .search-form {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   height: 30px;
   display: flex;
   flex-direction: row;

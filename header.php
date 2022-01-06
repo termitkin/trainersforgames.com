@@ -15,7 +15,7 @@ html {
   height: 100%;
 }
 body {
-	height: calc(100% - 50px);
+  height: calc(100% - 50px);
 }
 body, div, header, aside, footer, input, button, ul {
   margin: 0;
@@ -241,7 +241,7 @@ body, div, header, aside, footer, input, button, ul {
   font-family: Arial, sans-serif;
 }
 .comment-body {
-  word-wrap: break-word;	  
+  word-wrap: break-word;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -353,7 +353,7 @@ body, div, header, aside, footer, input, button, ul {
 .submit:focus {
   background-color: #ffffcc;
 }
-.submit_search {
+.submit_type_search {
   height: 30px;
   border: 0;
   border-radius: 0 3px 3px 0;
@@ -491,7 +491,7 @@ body, div, header, aside, footer, input, button, ul {
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
       <form role="search" class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
         <input class="input input_search" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">
-        <button class="submit submit_search" aria-label="Search button" id="searchsubmit" type="submit">Search</button>
+        <button class="submit submit_type_search" aria-label="Search button" id="searchsubmit" type="submit">Search</button>
       </form>
     </div>
   </header>
@@ -512,7 +512,7 @@ body, div, header, aside, footer, input, button, ul {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
+
   ga('create', 'UA-12705312-13', 'trainersforgames.com',{'siteSpeedSampleRate': 100});
   ga('require', 'displayfeatures');
   ga('send', 'pageview');

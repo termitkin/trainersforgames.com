@@ -1,8 +1,6 @@
 <footer role="contentinfo" class="footer">
-  <link href="//trainersforgames.com/wp-content/themes/trainersforgames-v1/style.css" rel="stylesheet">
-
   <div class="footer__inner">
-		<div class="footer__content footer__content_align_left">
+    <div class="footer__content footer__content_align_left">
       <a class="link link_color_white" href="/" title="Home page">Home</a>
       <a class="link link_color_white" href="//savesforgames.com/" title="Download Saves For Games" rel="nofollow noopener" target="_blank">Saves&nbsp;For&nbsp;Games</a>
     </div>
@@ -12,8 +10,8 @@
       <span>&copy; 2018-2022</span>
     </div>
   </div>
-
 </footer>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <?php wp_footer(); ?>
 </body>

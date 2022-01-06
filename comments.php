@@ -22,16 +22,16 @@
 		</h2>
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
+				wp_list_comments(array(
 					'avatar_size' => 100,
 					'style'       => 'ul',
 					'short_ping'  => false,
-          'reply_text'  => 'Reply',
-          'format'      => 'html5',
-				) );
+                    'reply_text'  => 'Reply',
+                    'format'      => 'html5',
+				));
 			?>
 		</ol>
-    <?php 
+    <?php
 		endif;
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 			<p class="no-comments"><?php _e( 'Comments are closed.', 'twentyseventeen' ); ?></p>

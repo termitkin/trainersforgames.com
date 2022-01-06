@@ -109,7 +109,7 @@ function website_remove($fields) {
 	if (isset($fields['email'])) {
 		unset($fields['email']);
 	}
-	
+
 	return $fields;
 }
 add_filter('comment_form_default_fields', 'website_remove');
@@ -128,10 +128,5 @@ function wpb_move_comment_field_to_bottom($fields) {
 	return $fields;
 }
 add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom' );
-
-
-
-
-
 
 ?>

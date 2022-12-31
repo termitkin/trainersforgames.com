@@ -141,11 +141,11 @@ body, div, header, aside, footer, input, button, ul {
   font-family: Arial, sans-serif;
 }
 .post__password {
-  color: #E60050;
+  color: #E6005C;
   font-weight: bold;
 }
 .post__trainer-version {
-  color: #E60050;
+  color: #E6005C;
 }
 .post p {
   margin: 13px 0;
@@ -205,6 +205,12 @@ body, div, header, aside, footer, input, button, ul {
   max-width: 260px;
   list-style-type: none;
   font-size: 0.75rem;
+}
+.popular-posts-list__item {
+  margin: 0 0 6px 0;
+}
+.popular-posts-list__item:last-child {
+  margin: 0;
 }
 .link {
   text-decoration: underline;

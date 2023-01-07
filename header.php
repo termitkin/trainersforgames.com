@@ -246,8 +246,9 @@ body, div, header, aside, footer, input, button, ul {
 .comment-body {
   word-wrap: break-word;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
+  outline: 1px solid #ddd;
+  background-color: #f5f5f5;
 }
 .comment-meta {
   display: flex;
@@ -255,9 +256,8 @@ body, div, header, aside, footer, input, button, ul {
   justify-content: space-between;
   background-color: #007dad;
   color: #fff;
-  margin: -11px -11px 0 -11px;
   padding: 5px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
 .comment-metadata {
   display: flex;

@@ -53,16 +53,6 @@ body, div, header, aside, footer, input, button, ul {
     margin: 0;
     padding: 0;
 }
-.google-ads-in-header {
-    width: 100%;
-    max-width: 728px;
-    margin: 20px auto 0 auto;
-}
-@media screen and (min-width: 992px) {
-    .google-ads-in-header {
-        width: 728px;
-    }
-}
 .header {
     background-color: var(--bg-secondary);
     display: flex;
@@ -450,11 +440,6 @@ body, div, header, aside, footer, input, button, ul {
 .current:hover,
 .current:focus {
     background-color: var(--dark-grey);
-}
-.google-ads-and-comments-wrapper {
-    width: 100%;
-    max-width: 500px;
-    min-height: 307px;
 }
 .social-network-like-buttons {
     max-width: 500px;

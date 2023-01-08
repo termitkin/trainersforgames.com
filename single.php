@@ -20,14 +20,14 @@
     <?php endif; ?>
 
     <?php if (get_post_meta(get_the_ID(), '1', true)) { ?>
-      <div class="you-can-download">
+      <p class="you-can-download">
         Also, you can download
           <a class="link link_size_big" href="//savesforgames.com<?php echo (get_post_meta(get_the_ID(), '1', true)) ?>" target="_blank" rel="nofollow noopener">savegame</a>
         for this game
-      </div>
+      </p>
     <?php } ?>
 
-    <div class="leave-a-comment">Comments:</div>
+    <p class="leave-a-comment">Comments:</p>
     <?php
         // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) :

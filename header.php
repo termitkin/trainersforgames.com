@@ -7,12 +7,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<script>
+(() => {
+    const theme = localStorage.getItem('theme') || 'auto';
+
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
 <style>
+:root {
+    --bg-main: #fff;
+    --bg-secondary: #007dad;
+    --link: #007dad;
+    --text-main: #444;
+    --text-light: #fff;
+    --accent: #e6005c;
+    --dark-grey: #333;
+    --light-yellow: #ffc;
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+        --bg-main: #12202e;
+        --bg-secondary: #13314d;
+        --link: #00b8ff;
+        --text-main: #ddd;
+        --accent: #a3ff00;
+    }
+}
+:root[data-theme='dark'] {
+    --bg-main: #12202e;
+    --bg-secondary: #13314d;
+    --link: #00b8ff;
+    --text-main: #ddd;
+    --accent: #a3ff00;
+}
 html {
   height: 100%;
 }
 body {
   height: calc(100% - 50px);
+  background-color: var(--bg-main);
+  font-family: Arial, Helvetica, sans-serif;
 }
 body, div, header, aside, footer, input, button, ul {
   margin: 0;
@@ -29,11 +64,10 @@ body, div, header, aside, footer, input, button, ul {
   }
 }
 .header {
-  background-color: #007dad;
-  height: 80px;
+  background-color: var(--bg-secondary);
   display: flex;
   justify-content: center;
-  padding: 0 15px;
+  padding: 1rem;
 }
 @media screen and (min-width: 576px) {
   .header {
@@ -43,60 +77,28 @@ body, div, header, aside, footer, input, button, ul {
 }
 .header__content {
   width: 100%;
-  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: Arial, sans-serif;
+  gap: 1rem;
 }
 @media screen and (min-width: 576px) {
   .header__content {
     width: 780px;
-    height: 40px;
     padding: 0 15px;
     flex-direction: row;
     justify-content: space-between;
+    gap: unset;
   }
 }
 .search-form {
   width: 100%;
   max-width: 260px;
-  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-}
-.search-form__input {
-  width: 200px;
-  height: 30px;
-  border-radius: 3px 0 0 3px;
-  border: 0;
-  margin: 0;
-  padding: 7px;
-  background-color: #fff;
-  transition: background-color 0.25s;
-  box-sizing: border-box;
-}
-.search-form__input:hover,
-.search-form__input:focus {
-  background-color: #ffffcc;
-  outline: none;
-}
-.search-form__button {
-  height: 30px;
-  background-color: #fff;
-  border: 0;
-  border-radius: 0 3px 3px 0;
-  border-left: 1px solid #ccc;
-  cursor: pointer;
-  padding: 7px;
-}
-.search-form__button:hover,
-.search-form__button:focus {
-  background-color: #ffffcc;
-  outline: none;
 }
 .site-logo {
   color: #fff;
@@ -107,8 +109,13 @@ body, div, header, aside, footer, input, button, ul {
 }
 .site-logo:focus,
 .site-logo:hover {
-  color: #ffffcc;
+  color: var(--light-yellow);
   text-decoration: none;
+}
+@media screen and (min-width: 576px) {
+    .site-logo {
+        margin-right: auto;
+    }
 }
 .content-and-sidebar-wrapper {
   min-height: calc(100% - 266px);
@@ -121,7 +128,7 @@ body, div, header, aside, footer, input, button, ul {
 }
 @media screen and (min-width: 576px) {
   .content-and-sidebar-wrapper {
-    min-height: calc(100% - 174px);
+    min-height: calc(100% - 90px);
   }
 }
 @media screen and (min-width: 992px) {
@@ -134,26 +141,22 @@ body, div, header, aside, footer, input, button, ul {
   width: 100%;
   max-width: 500px;
   margin-top: 10px;
-  color: #444;
+  color: var(--text-main);
   font-size: 0.8125rem;
   line-height: 1.4;
-  font-family: Arial, sans-serif;
 }
 .post__password {
-  color: #E6005C;
+  color: var(--accent);
   font-weight: bold;
 }
 .post__trainer-version {
-  color: #E6005C;
+  color: var(--accent);
 }
 .post p {
   margin: 13px 0;
 }
-.post strong {
-  color: #454545;
-}
 .post a {
-  color: #007dad;
+  color: var(--link);
 }
 .post a:hover,
 .post a:focus {
@@ -181,7 +184,6 @@ body, div, header, aside, footer, input, button, ul {
   max-width: 260px;
   overflow-x: hidden;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 992px) {
   .sidebar {
@@ -191,14 +193,13 @@ body, div, header, aside, footer, input, button, ul {
 .post-heading {
   display: inline;
   font-size: 1.125rem;
-  color: #007dad;
+  color: var(--link);
   font-weight: 400;
-  font-family: Arial, sans-serif;
 }
 .popular-posts-heading {
   margin: 12px 0 3px 0;
   font-size: 1.125rem;
-  color: #007dad;
+  color: var(--link);
 }
 .popular-posts-list {
   max-width: 260px;
@@ -213,10 +214,9 @@ body, div, header, aside, footer, input, button, ul {
 }
 .link {
   text-decoration: underline;
-  color: #007dad;
+  color: var(--link);
   font-size: 0.8125rem;
   font-weight: 400;
-  font-family: Arial, sans-serif;
 }
 .link:hover,
 .link:focus {
@@ -228,34 +228,42 @@ body, div, header, aside, footer, input, button, ul {
 .link_color_white {
   color: #fff;
 }
+.logged-in-as a,
+.comment-reply-title a{
+    color: var(--link);
+}
+.comment-reply-title a:hover,
+.comment-reply-title a:focus,
+.logged-in-as a:hover,
+.logged-in-as a:focus {
+    text-decoration: none;
+}
 .comment-list,
 .children {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: Arial, sans-serif;
 }
 .comment-list,
 .comment-body,
 .comments-title,
 .comment-reply-title {
-  color: #444;
+  color: var(--text-main);
   font-size: 0.875rem;
-  font-family: Arial, sans-serif;
 }
 .comment-body {
   word-wrap: break-word;
   padding: 10px;
   border-radius: 5px;
-  outline: 1px solid #ddd;
-  background-color: #f5f5f5;
+  outline: 1px dashed var(--link);
+  background-color: var(--bg-main);
 }
 .comment-meta {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #007dad;
-  color: #fff;
+  background-color: var(--bg-secondary);
+  color: var(--text-light);
   padding: 5px;
   border-radius: 5px;
 }
@@ -263,11 +271,11 @@ body, div, header, aside, footer, input, button, ul {
   display: flex;
 }
 .comment-metadata a {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: underline;
 }
 .comment-metadata a:hover {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: none;
 }
 .edit-link {
@@ -284,7 +292,7 @@ body, div, header, aside, footer, input, button, ul {
   margin-left: auto;
 }
 .comment-reply-link {
-  color: #007dad;
+  color: var(--link);
   text-decoration: underline;
 }
 .comment-reply-link:hover {
@@ -297,9 +305,8 @@ body, div, header, aside, footer, input, button, ul {
   display: flex;
   flex-direction: column;
   margin: 0 0 15px 0;
-  font-family: Arial, sans-serif;
   font-size: 0.875rem;
-  color: #333;
+  color: var(--text-main);
 }
 .comment-form-comment,
 .comment-form-author {
@@ -315,15 +322,13 @@ body, div, header, aside, footer, input, button, ul {
   width: 100%;
   height: 30px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--link);
   margin: 0;
   padding: 7px;
-  background-color: #fff;
+  background-color: var(--bg-main);
   transition: background-color 0.25s;
   box-sizing: border-box;
-  font-size: 1rem;
-  font-family: Arial, sans-serif;
-  color: #333;
+  color: var(--text-main);
   font-size: 0.83125rem;
   line-height: 0.83125rem;
 }
@@ -336,7 +341,7 @@ body, div, header, aside, footer, input, button, ul {
   max-width: 100%;
   min-width: 100%;
 }
-.input_search {
+.input_type_search {
   border: none;
   border-radius: 3px 0 0 3px;
   font-size: 0.83125rem;
@@ -344,45 +349,37 @@ body, div, header, aside, footer, input, button, ul {
 }
 .submit {
   min-height: 30px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--bg-secondary);
+    color: var(--text-light);
+  border: unset;
   border-radius: 3px 3px 3px 3px;
   cursor: pointer;
   padding: 7px;
   font-size: 0.83125rem;
   line-height: 0.83125rem;
 }
-.submit:hover,
-.submit:focus {
-  background-color: #ffffcc;
-}
 .submit_type_search {
   height: 30px;
   border: 0;
   border-radius: 0 3px 3px 0;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid var(--link);
   font-size: 0.83125rem;
   line-height: 0.83125rem;
+    background-color: var(--bg-main);
+    color: var(--text-main);
 }
 #comment {
   min-height: 100px;
 }
-.input:focus,
-#comment:focus,
-#author:focus {
-  background-color: #ffffcc;
-  outline: none;
-}
 .footer {
   padding: 15px;
-  background-color: #007dad;
+  background-color: var(--bg-secondary);
   color: #fff;
   margin-top: 20px;
   font-size: 0.875rem;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 576px) {
   .footer {
@@ -436,24 +433,23 @@ body, div, header, aside, footer, input, button, ul {
   align-items: center;
   margin: 10px 4px 0 0;
   padding: 5px 10px 5px 10px;
-  background-color: #007dad;
+  background-color: var(--link);
   color: #fff;
   text-decoration: none;
-  font-family: Arial, sans-serif;
   border-radius: 3px;
 }
 .page-numbers:hover,
 .page-numbers:focus {
-  background-color: #249556;
+  background-color: var(--bg-secondary);
 }
 .dots:hover,
 .dots:focus {
-  background-color: #007dad;
+  background-color: var(--bg-secondary);
 }
 .current,
 .current:hover,
 .current:focus {
-  background-color: #333;
+  background-color: var(--dark-grey);
 }
 .google-ads-and-comments-wrapper {
   width: 100%;
@@ -470,12 +466,11 @@ body, div, header, aside, footer, input, button, ul {
   margin: 10px 0;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #007dad;
-  font-family: Arial, sans-serif;
+  color: var(--link);
 }
 .post-views-label,
 .post-views-count {
-  color: #444;
+  color: var(--text-main);
   font-size: 0.75rem;
   display: inline;
 }
@@ -483,8 +478,38 @@ body, div, header, aside, footer, input, button, ul {
   width: 100%;
   max-width: 500px;
   margin-bottom: 15px;
-  font-family: Arial, sans-serif;
-  color: #444;
+  color: var(--text-main);
+}
+.theme-switchers {
+    display: flex;
+    margin: 0.75rem 0;
+    align-items: center;
+    gap: 0.5rem;
+}
+@media screen and (min-width: 576px) {
+    .theme-switchers {
+        margin: 0 1rem 0 auto;
+    }
+}
+.theme-switcher {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border: unset;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+}
+.theme-switcher:hover {
+    cursor: pointer;
+    /*border-top: 3px solid gold;*/
+    /*border-bottom: 3px solid gold;*/
+    background-color: cadetblue;
+}
+.theme-switcher svg {
+    fill: currentColor;
 }
 </style>
 </head>
@@ -493,7 +518,7 @@ body, div, header, aside, footer, input, button, ul {
     <div class="header__content">
       <a class="site-logo" href="/" title="Home page">TrainersForGames.Com</a>
       <form role="search" class="search-form" id="searchform" action="//trainersforgames.com/" method="get">
-        <input class="input input_search" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">
+        <input class="input input_type_search" aria-label="Enter here title of a game to find a trainer" name="s" type="text" placeholder="Find a trainer..">
         <button class="submit submit_type_search" aria-label="Search button" id="searchsubmit" type="submit">Search</button>
       </form>
     </div>

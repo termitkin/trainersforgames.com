@@ -140,7 +140,7 @@ html, body, div, header, aside, footer, input, button, ul {
   </script>
 
 	<div class="page-404">
-    <h1 class="page-404__heading">Error 404: Page not Found</h1>
+        <h1 class="page-404__heading">Error 404: Page not Found</h1>
 		<img class="page-404__image" src="<?php echo esc_url( get_template_directory_uri() );?>/404-error/404.jpg" alt="Error 404: Page not Found" />
 	</div>
 </body>

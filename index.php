@@ -34,8 +34,8 @@
 
     <?php else : ?>
 
-      <h2 class="center">Not Found</h2>
-      <p class="center">Sorry, but you are looking for something that isn't here.</p>
+      <h2 style="color: var(--text-main);">Not Found</h2>
+      <p style="color: var(--text-main);">Sorry, but you are looking for something that isn't here.</p>
 
     <?php endif; ?>
 

@@ -21,7 +21,7 @@
     --link: #007dad;
     --text-main: #444;
     --text-light: #fff;
-    --accent: #e6005c;
+    --accent: oklch(0.62 0.27 14.96);
     --dark-grey: #333;
     --light-yellow: #ffc;
 }
@@ -29,17 +29,17 @@
     :root:not([data-theme-name='light']) {
         --bg-main: #12202e;
         --bg-secondary: #13314d;
-        --link: #00b8ff;
+        --link: oklch(0.69 0.19 238.26);
         --text-main: #ddd;
-        --accent: #a3ff00;
+        --accent: oklch(0.9 0.29 133.03);
     }
 }
 :root[data-theme-name='dark'] {
     --bg-main: #12202e;
     --bg-secondary: #13314d;
-    --link: #00b8ff;
+    --link: oklch(0.69 0.19 238.26);
     --text-main: #ddd;
-    --accent: #a3ff00;
+    --accent: oklch(0.9 0.29 133.03);
 }
 html {
     height: 100%;

@@ -16,29 +16,29 @@
 </script>
 <style>
 :root {
-    --bg-main: oklch(1 0 0);
-    --bg-secondary: oklch(0.56 0.12 234.33);
-    --link: oklch(0.56 0.12 234.33);
-    --text-main: oklch(0.39 0 0);
-    --text-light: oklch(1 0 0);
+    --bg-main: #fff;
+    --bg-secondary: #007dad;
+    --link: #007dad;
+    --text-main: #444;
+    --text-light: #fff;
     --accent: oklch(0.62 0.27 14.96);
-    --dark-grey: oklch(0.32 0 0);
-    --light-yellow: oklch(0.99 0.07 107.5);
+    --dark-grey: #333;
+    --light-yellow: #ffc;
 }
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme-name='light']) {
-        --bg-main: oklch(0.24 0.03 249.4);
-        --bg-secondary: oklch(0.31 0.06 249.19);
+        --bg-main: #12202e;
+        --bg-secondary: #13314d;
         --link: oklch(0.69 0.19 238.26);
-        --text-main: oklch(0.9 0 0);
+        --text-main: #ddd;
         --accent: oklch(0.9 0.29 133.03);
     }
 }
 :root[data-theme-name='dark'] {
-    --bg-main: oklch(0.24 0.03 249.4);
-    --bg-secondary: oklch(0.31 0.06 249.19);
+    --bg-main: #12202e;
+    --bg-secondary: #13314d;
     --link: oklch(0.69 0.19 238.26);
-    --text-main: oklch(0.9 0 0);
+    --text-main: #ddd;
     --accent: oklch(0.9 0.29 133.03);
 }
 html {
@@ -91,7 +91,7 @@ body, div, header, aside, footer, input, button, ul {
     align-items: center;
 }
 .site-logo {
-    color: oklch(1 0 0);
+    color: #fff;
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
@@ -216,7 +216,7 @@ body, div, header, aside, footer, input, button, ul {
     font-size: 1.125rem;
 }
 .link_color_white {
-    color: oklch(1 0 0);
+    color: #fff;
 }
 .logged-in-as a,
 .comment-reply-title a{
@@ -364,7 +364,7 @@ body, div, header, aside, footer, input, button, ul {
 .footer {
     padding: 15px;
     background-color: var(--bg-secondary);
-    color: oklch(1 0 0);
+    color: #fff;
     margin-top: 20px;
     font-size: 0.875rem;
     display: flex;
@@ -424,7 +424,7 @@ body, div, header, aside, footer, input, button, ul {
     margin: 10px 4px 0 0;
     padding: 5px 10px 5px 10px;
     background-color: var(--link);
-    color: oklch(1 0 0);
+    color: #fff;
     text-decoration: none;
     border-radius: 3px;
 }
@@ -481,7 +481,7 @@ body, div, header, aside, footer, input, button, ul {
     height: 36px;
     background-color: transparent;
     border: unset;
-    color: oklch(1 0 0);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;

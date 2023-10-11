@@ -89,6 +89,7 @@ body, div, header, aside, footer, input, button, ul {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    gap: 2px;
 }
 .site-logo {
     color: #fff;
@@ -171,6 +172,7 @@ body, div, header, aside, footer, input, button, ul {
 .sidebar {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 260px;
     overflow-x: hidden;
     margin: 0 auto;
@@ -195,6 +197,7 @@ body, div, header, aside, footer, input, button, ul {
     max-width: 260px;
     list-style-type: none;
     font-size: 0.75rem;
+    margin-top: 0.5rem;
 }
 .popular-posts-list__item {
     margin: 0 0 6px 0;
@@ -352,7 +355,6 @@ body, div, header, aside, footer, input, button, ul {
     height: 30px;
     border: 0;
     border-radius: 0 3px 3px 0;
-    border-left: 1px solid var(--link);
     font-size: 0.83125rem;
     line-height: 0.83125rem;
     background-color: var(--bg-main);

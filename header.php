@@ -16,6 +16,8 @@
 </script>
 <style>
 :root {
+    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
     --bg-main: #fff;
     --bg-secondary: #007dad;
     --link: #007dad;
@@ -47,7 +49,7 @@ html {
 body {
     height: calc(100% - 50px);
     background-color: var(--bg-main);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
 }
 body, div, header, aside, footer, input, button, ul {
     margin: 0;

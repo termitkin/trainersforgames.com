@@ -184,28 +184,23 @@ body, div, header, aside, footer, input, button, ul {
         margin: 0;
     }
 }
-.post-heading {
-    display: inline;
-    font-size: 1.125rem;
-    color: var(--link);
-    font-weight: 400;
+.popular-posts {
+  display: block;
 }
-.popular-posts-heading {
-    margin: 12px 0 3px 0;
-    font-size: 1.125rem;
-    color: var(--link);
+.popular-posts__heading {
+  margin: 12px 0 3px 0;
+  font-size: 1.125rem;
+  color: var(--link);
 }
-.popular-posts-list {
-    max-width: 260px;
-    list-style-type: none;
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-}
-.popular-posts-list__item {
-    margin: 0 0 6px 0;
-}
-.popular-posts-list__item:last-child {
-    margin: 0;
+.popular-posts__list {
+  max-width: 260px;
+  list-style-type: none;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
 }
 .link {
     text-decoration: underline;
